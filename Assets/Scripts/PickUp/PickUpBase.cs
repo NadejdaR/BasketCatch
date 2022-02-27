@@ -22,7 +22,7 @@ public abstract class PickUpBase : MonoBehaviour
   
     private void PlayVisualEffect()
     {
-    
+     // add visual effect
     }
 
     private void PlayAudio()

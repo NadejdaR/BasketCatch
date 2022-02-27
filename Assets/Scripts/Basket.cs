@@ -8,12 +8,12 @@ public class Basket : MonoBehaviour
   {
     _mainCamera = Camera.main;
   }
-  
+
   private void Update()
   {
-      FollowMouse();
+    FollowMouse();
   }
-  
+
   private void FollowMouse()
   {
     Vector3 mousePosition = Input.mousePosition;
