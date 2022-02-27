@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2577117874913669601}
   - component: {fileID: 6811921407197018767}
   - component: {fileID: 8952331503436755597}
+  - component: {fileID: 5452079140596028704}
   m_Layer: 0
   m_Name: ScoreUpPickUp
   m_TagString: Untagged
@@ -131,3 +132,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &5452079140596028704
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2658654197741068637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d10bfca8e9b34aed8d80d7b0f5b6d018, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _applyAudioClip: {fileID: 0}
+  _applyVisualEffect: {fileID: 0}
+  _scoreToAdd: 0

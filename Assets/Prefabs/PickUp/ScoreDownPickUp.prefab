@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2757272295025860803}
   - component: {fileID: 2757272295025860804}
   - component: {fileID: 229838022519190074}
+  - component: {fileID: 956315264722683878}
   m_Layer: 0
   m_Name: ScoreDownPickUp
   m_TagString: Untagged
@@ -131,3 +132,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &956315264722683878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2757272295025860805}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69254f80d1f31c1459d6454d4ed1380c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _applyAudioClip: {fileID: 0}
+  _applyVisualEffect: {fileID: 0}
+  _scoreToSubtract: 0

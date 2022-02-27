@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7697254852038211238}
   - component: {fileID: 7538964004916200104}
   - component: {fileID: 4967839731626477396}
+  - component: {fileID: 2126167081013865391}
   m_Layer: 0
   m_Name: AddLifePickUp
   m_TagString: Untagged
@@ -131,3 +132,17 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &2126167081013865391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2686339206000903480}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7ad77f6ae3e19cd4ba2a41623243e9c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _applyAudioClip: {fileID: 0}
+  _applyVisualEffect: {fileID: 0}
