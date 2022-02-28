@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 7538964004916200104}
   - component: {fileID: 4967839731626477396}
   - component: {fileID: 2126167081013865391}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: AddLifePickUp
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,3 +146,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _applyAudioClip: {fileID: 0}
   _applyVisualEffect: {fileID: 0}
+  _liveToAdd: 1

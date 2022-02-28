@@ -20,6 +20,7 @@ public class SceneHelper
   public void RestartBtn()
   {
     RunTimeScale();
+    GameManager.Instance.Reload();
     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
   }
 

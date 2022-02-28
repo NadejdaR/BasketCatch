@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 6811921407197018767}
   - component: {fileID: 8952331503436755597}
   - component: {fileID: 5452079140596028704}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: ScoreUpPickUp
-  m_TagString: Untagged
+  m_TagString: PickUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -146,4 +146,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _applyAudioClip: {fileID: 0}
   _applyVisualEffect: {fileID: 0}
-  _scoreToAdd: 0
+  _scoreToAdd: 20
+  _scoreToSubstract: 10

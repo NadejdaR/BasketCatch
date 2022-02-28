@@ -11,16 +11,14 @@ public class SpawnManager : MonoBehaviour
   private void Start()
   {
     _countArray = _pickUpPrefabs.Length;
-  }
+    InvokeRepeating("SpawnPickUp", 2f,1.5f);
 
-  private void Update()
-  {
-    SpawnPickUp();
   }
 
   private void SpawnPickUp()
   {
     _randomIndex = Random.Range(0, _countArray);
-    Instantiate(_pickUpPrefabs[_randomIndex], new Vector3(0, 0, 20), _pickUpPrefabs[_randomIndex].transform.rotation);
+    Vector3 spawnPos = new Vector3(Random.Range(-2.8f, 2.8f), 5, 0);
+    Instantiate(_pickUpPrefabs[_randomIndex], spawnPos, _pickUpPrefabs[_randomIndex].transform.rotation);
   }
 }

@@ -1,7 +1,12 @@
+using UnityEngine;
+
 public class AddLifePickUp : PickUpBase
 {
+  [Header("ScoreDown Settings")]
+  [SerializeField] private int _liveToAdd;
+  
   protected override void ApplyPickUp()
   {
-    throw new System.NotImplementedException();
+    GameManager.Instance.AddLive(_liveToAdd);
   }
 }
