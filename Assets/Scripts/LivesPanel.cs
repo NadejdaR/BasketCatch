@@ -6,7 +6,7 @@ public class LivesPanel : MonoBehaviour
     [SerializeField] private GameObject _liveCellPrefab;
     [SerializeField] private Transform _cellsParent;
 
-    private List<GameObject> _cells = new List<GameObject>();
+    private readonly List<GameObject> _cells = new List<GameObject>();
 
     private void OnDestroy()
     {

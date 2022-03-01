@@ -4,15 +4,14 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
   [Header("Lives")] 
-  [SerializeField] private int _maxLives = 5;
-  [SerializeField] private int _startLives = 3;
+  [SerializeField] private int _maxLives;
+  [SerializeField] private int _startLives;
 
   private static GameManager _instance;
-
   public static GameManager Instance => _instance;
   public int MaxLives => _maxLives;
   public event Action OnLivesChanged;
-
+  public event Action OnLevelCleared;
   public int CurrentLives { get; private set; }
   public int Score { get; private set; }
 
@@ -29,7 +28,6 @@ public class GameManager : MonoBehaviour
 
     CurrentLives = _startLives;
   }
-
 
   public void Reload()
   {
@@ -49,21 +47,21 @@ public class GameManager : MonoBehaviour
 
   public void RemoveLive()
   {
-    if (CurrentLives <= 0)
-      return;
-
-    CurrentLives--;
     
+    if (CurrentLives <= 0)
+      OnLevelCleared?.Invoke();
+    CurrentLives--;
+
     OnLivesChanged?.Invoke();
   }
 
   public void AddLive(int liveToAdd)
   {
-    if (CurrentLives >= _maxLives)
-      return;
-
-    CurrentLives++;
     
+    if (CurrentLives >= _maxLives)
+      CurrentLives = _maxLives;
+    CurrentLives++;
+
     OnLivesChanged?.Invoke();
   }
 }
