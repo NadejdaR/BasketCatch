@@ -47,20 +47,20 @@ public class GameManager : MonoBehaviour
 
   public void RemoveLive()
   {
-    
+    CurrentLives--;
+
     if (CurrentLives <= 0)
       OnLevelCleared?.Invoke();
-    CurrentLives--;
 
     OnLivesChanged?.Invoke();
   }
 
   public void AddLive(int liveToAdd)
   {
-    
+    CurrentLives++;
+
     if (CurrentLives >= _maxLives)
       CurrentLives = _maxLives;
-    CurrentLives++;
 
     OnLivesChanged?.Invoke();
   }
