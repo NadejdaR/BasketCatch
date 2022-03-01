@@ -504,9 +504,12 @@ MonoBehaviour:
   - {fileID: 2686339206000903480, guid: c6320937879d0734f944b39d6d0941ae, type: 3}
   - {fileID: 2757272295025860805, guid: 75033fbcdfc60744ba2dda355eb078c8, type: 3}
   - {fileID: 2658654197741068637, guid: 4811a13b20f14844282cfe1077c502c5, type: 3}
-  spawnRangeX: 2.8
-  startDelay: 2
-  spawnInterval: 1.5
+  _spawnRangeX: 2.8
+  _spawnRate: 1.5
+  _delay: 2
+  _delayDecrease: 5
+  _spawnRateDecrease: 0.5
+  _minSpawnRate: 0.1
 --- !u!4 &548663590
 Transform:
   m_ObjectHideFlags: 0
@@ -735,8 +738,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d4cacdd6d9680845b9fdb5201b4fdf2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _maxLives: 3
-  _startLives: 1
+  _maxLives: 4
+  _startLives: 2
 --- !u!1 &1337211692
 GameObject:
   m_ObjectHideFlags: 0
