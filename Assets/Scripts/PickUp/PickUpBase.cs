@@ -1,43 +1,45 @@
-using System;
 using UnityEngine;
 
-public abstract class PickUpBase : MonoBehaviour
+namespace PickUp
 {
-  [Header(nameof(PickUpBase))] 
-  [SerializeField] private AudioClip _applyAudioClip;
-  [SerializeField] private GameObject _applyVisualEffect;
-
-  private void OnTriggerEnter2D(Collider2D col)
+  public abstract class PickUpBase : MonoBehaviour
   {
-    if (col.gameObject.CompareTag(Tags.Basket))
+    [Header(nameof(PickUpBase))] 
+    [SerializeField] private AudioClip _applyAudioClip;
+    [SerializeField] private GameObject _applyVisualEffect;
+
+    private void OnTriggerEnter2D(Collider2D col)
     {
-      PlayAudio();
-      PlayVisualEffect();
-      ApplyPickUp();
+      if (col.gameObject.CompareTag(Tags.Basket))
+      {
+        PlayAudio();
+        PlayVisualEffect();
+        ApplyPickUp();
       
-      Destroy(gameObject);
+        Destroy(gameObject);
+      }
     }
-  }
 
-  protected virtual void OnCollisionEnter2D(Collision2D col)
-  {
-    if (col.gameObject.CompareTag(Tags.Basket))
-      ApplyPickUp();
+    protected virtual void OnCollisionEnter2D(Collision2D col)
+    {
+      if (col.gameObject.CompareTag(Tags.Basket))
+        ApplyPickUp();
     
-    if (col.gameObject.CompareTag(Tags.BottomWall))
-      Destroy(gameObject);
-  }
+      if (col.gameObject.CompareTag(Tags.BottomWall))
+        Destroy(gameObject);
+    }
 
-  protected abstract void ApplyPickUp();
+    protected abstract void ApplyPickUp();
   
-  private void PlayVisualEffect()
-  {
-    // add visual effect
-  }
+    private void PlayVisualEffect()
+    {
+      // add visual effect
+    }
 
-  private void PlayAudio()
-  {
-    if(_applyAudioClip != null)
-      AudioManager.Instance.PlayOnShot(_applyAudioClip);
+    private void PlayAudio()
+    {
+      if(_applyAudioClip != null)
+        AudioManager.Instance.PlayOnShot(_applyAudioClip);
+    }
   }
 }

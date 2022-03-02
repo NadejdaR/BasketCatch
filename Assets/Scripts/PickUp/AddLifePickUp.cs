@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class AddLifePickUp : PickUpBase
+namespace PickUp
 {
-  [Header("ScoreDown Settings")]
-  [SerializeField] private int _liveToAdd;
-  
-  protected override void ApplyPickUp()
+  public class AddLifePickUp : PickUpBase
   {
-    GameManager.Instance.AddLive(_liveToAdd);
-    Destroy(gameObject);
+    [Header("ScoreDown Settings")]
+    [SerializeField] private int _liveToAdd;
+  
+    protected override void ApplyPickUp()
+    {
+      GameManager.Instance.AddLive(_liveToAdd);
+      Destroy(gameObject);
+    }
   }
 }

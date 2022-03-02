@@ -1,13 +1,16 @@
 using UnityEngine;
 
-public class ScoreDownPickUp : PickUpBase
+namespace PickUp
 {
-    [Header("ScoreDown Settings")]
+  public class ScoreDownPickUp : PickUpBase
+  {
+    [Header("ScoreDown Settings")] 
     [SerializeField] private int _scoreToSubtract;
 
     protected override void ApplyPickUp()
     {
-        GameManager.Instance.SubtractScore(_scoreToSubtract);
-        Destroy(gameObject);
+      GameManager.Instance.SubtractScore(_scoreToSubtract);
+      Destroy(gameObject);
     }
+  }
 }
