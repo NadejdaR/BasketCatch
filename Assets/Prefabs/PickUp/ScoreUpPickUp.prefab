@@ -145,5 +145,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _applyAudioClip: {fileID: 8300000, guid: 23ab272e3ba25450ea31f566494ac12b, type: 3}
-  _applyVisualEffect: {fileID: 0}
+  _applyVisualEffect: {fileID: 100006, guid: 8fc06027b01064e4f885fd8dd2929310, type: 3}
   _scoreToAdd: 20

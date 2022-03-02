@@ -36,7 +36,8 @@ namespace PickUp
   
     private void PlayVisualEffectBasket()
     {
-      // add visual effect
+      if(_applyVisualEffect != null)
+        Instantiate(_applyVisualEffect, transform.position, _applyVisualEffect.transform.rotation);
     }
 
     private void PlayAudioBasket()
