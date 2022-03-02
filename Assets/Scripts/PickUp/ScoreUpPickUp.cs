@@ -17,11 +17,13 @@ public class ScoreUpPickUp : PickUpBase
     if (col.gameObject.CompareTag(Tags.Basket))
     {
       ApplyPickUp();
+      Destroy(gameObject);
     }
     
     if (col.gameObject.CompareTag(Tags.BottomWall))
     {
       GameManager.Instance.RemoveLive();
+      Destroy(gameObject);
     }
     
     Destroy(gameObject);

@@ -22,11 +22,10 @@ public abstract class PickUpBase : MonoBehaviour
   protected virtual void OnCollisionEnter2D(Collision2D col)
   {
     if (col.gameObject.CompareTag(Tags.Basket))
-    {
       ApplyPickUp();
-    }
     
-    Destroy(gameObject);
+    if (col.gameObject.CompareTag(Tags.BottomWall))
+      Destroy(gameObject);
   }
 
   protected abstract void ApplyPickUp();

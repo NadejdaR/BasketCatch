@@ -8,5 +8,6 @@ public class AddLifePickUp : PickUpBase
   protected override void ApplyPickUp()
   {
     GameManager.Instance.AddLive(_liveToAdd);
+    Destroy(gameObject);
   }
 }

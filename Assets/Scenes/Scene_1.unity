@@ -505,10 +505,10 @@ MonoBehaviour:
   - {fileID: 2757272295025860805, guid: 75033fbcdfc60744ba2dda355eb078c8, type: 3}
   - {fileID: 2658654197741068637, guid: 4811a13b20f14844282cfe1077c502c5, type: 3}
   _spawnRangeX: 2.8
-  _spawnRate: 1.5
+  _spawnRate: 3
   _delay: 2
   _delayDecrease: 5
-  _spawnRateDecrease: 0.5
+  _spawnRateDecrease: 0.3
   _minSpawnRate: 0.1
 --- !u!4 &548663590
 Transform:
@@ -1279,7 +1279,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1657533342}
   - component: {fileID: 1657533341}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: BottomWall
   m_TagString: BottomWall
   m_Icon: {fileID: 0}
