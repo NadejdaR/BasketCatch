@@ -10,7 +10,6 @@ namespace PickUp
     protected override void ApplyPickUp()
     {
       GameManager.Instance.SubtractScore(_scoreToSubtract);
-      Destroy(gameObject);
     }
   }
 }

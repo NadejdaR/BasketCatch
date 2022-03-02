@@ -12,21 +12,13 @@ namespace PickUp
       GameManager.Instance.AddScore(_scoreToAdd);
     }
 
-    protected override void OnCollisionEnter2D(Collision2D col)
+    protected override void BottomCollision(Collision2D col)
     {
-      if (col.gameObject.CompareTag(Tags.Basket))
-      {
-        ApplyPickUp();
-        Destroy(gameObject);
-      }
-    
       if (col.gameObject.CompareTag(Tags.BottomWall))
       {
         GameManager.Instance.RemoveLive();
         Destroy(gameObject);
       }
-    
-      Destroy(gameObject);
     }
   }
 }

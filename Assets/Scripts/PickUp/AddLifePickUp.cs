@@ -10,7 +10,6 @@ namespace PickUp
     protected override void ApplyPickUp()
     {
       GameManager.Instance.AddLive(_liveToAdd);
-      Destroy(gameObject);
     }
   }
 }

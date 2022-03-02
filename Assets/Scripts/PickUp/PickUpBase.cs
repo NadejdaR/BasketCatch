@@ -8,38 +8,46 @@ namespace PickUp
     [SerializeField] private AudioClip _applyAudioClip;
     [SerializeField] private GameObject _applyVisualEffect;
 
-    private void OnTriggerEnter2D(Collider2D col)
+    private void OnCollisionEnter2D(Collision2D col)
     {
+      if (col.gameObject.CompareTag(Tags.BottomWall))
+        BottomCollision(col);
+
       if (col.gameObject.CompareTag(Tags.Basket))
       {
-        PlayAudio();
-        PlayVisualEffect();
-        ApplyPickUp();
-      
-        Destroy(gameObject);
+        PlayAudioBasket();
+        PlayVisualEffectBasket();
+        BasketCollision(col);
       }
     }
 
-    protected virtual void OnCollisionEnter2D(Collision2D col)
+    protected virtual void BottomCollision(Collision2D col)
     {
-      if (col.gameObject.CompareTag(Tags.Basket))
-        ApplyPickUp();
-    
-      if (col.gameObject.CompareTag(Tags.BottomWall))
-        Destroy(gameObject);
+      Destroy(gameObject);
     }
+
+    private void BasketCollision(Collision2D col)
+    {
+      ApplyPickUp();
+      Destroy(gameObject);
+   }
 
     protected abstract void ApplyPickUp();
   
-    private void PlayVisualEffect()
+    private void PlayVisualEffectBasket()
     {
       // add visual effect
     }
 
-    private void PlayAudio()
+    private void PlayAudioBasket()
     {
       if(_applyAudioClip != null)
         AudioManager.Instance.PlayOnShot(_applyAudioClip);
+    }
+
+    protected void OnCollisionEnter2D()
+    {
+      throw new System.NotImplementedException();
     }
   }
 }

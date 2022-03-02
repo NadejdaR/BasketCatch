@@ -144,7 +144,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d10bfca8e9b34aed8d80d7b0f5b6d018, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _applyAudioClip: {fileID: 0}
+  _applyAudioClip: {fileID: 8300000, guid: 23ab272e3ba25450ea31f566494ac12b, type: 3}
   _applyVisualEffect: {fileID: 0}
   _scoreToAdd: 20
-  _scoreToSubstract: 10
