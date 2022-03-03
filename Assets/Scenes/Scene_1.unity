@@ -508,7 +508,7 @@ MonoBehaviour:
   _spawnRate: 3
   _delay: 2
   _delayDecrease: 5
-  _spawnRateDecrease: 0.3
+  _spawnRateDecrease: 0.05
   _minSpawnRate: 0.1
 --- !u!4 &548663590
 Transform:
