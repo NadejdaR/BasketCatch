@@ -8,9 +8,9 @@ If the blue star is not caught, then life is taken away.
 Screen size 480x800
 
 ## Screenshot
-![alt text](https://github.com/NadejdaR/BasketCatch/tree/master/Screenshots/Screenshot_1.png)
-![alt text](https://github.com/NadejdaR/BasketCatch/tree/master/Screenshots/Screenshot_2.png)
-![alt text](https://github.com/NadejdaR/BasketCatch/tree/master/Screenshots/Screenshot_3.png)
-![alt text](https://github.com/NadejdaR/BasketCatch/tree/master/Screenshots/Screenshot_4.png)
+![alt text](https://github.com/NadejdaR/BasketCatch/blob/master/Screenshots/Screenshot_1.png)
+![alt text](https://github.com/NadejdaR/BasketCatch/blob/master/Screenshots/Screenshot_2.png)
+![alt text](https://github.com/NadejdaR/BasketCatch/blob/master/Screenshots/Screenshot_3.png)
+![alt text](https://github.com/NadejdaR/BasketCatch/blob/master/Screenshots/Screenshot_4.png)
 
-![alt text](https://github.com/NadejdaR/BasketCatch/tree/master/Screenshots/oUS4N9YnbA.gif)
+![alt text](https://github.com/NadejdaR/BasketCatch/blob/master/Screenshots/oUS4N9YnbA.gif)
